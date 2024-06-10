@@ -30,7 +30,7 @@ nano config/mosquitto.conf
 
 Optei por utilizar o broker Mosquitto devido à sua popularidade e documentação abrangente.
 
-No arquivo mosquitto.conf, adicione as seguintes configurações:
+Crie um arquivo mosquitto.conf e adicione as seguintes configurações:
 ```bash
 allow_anonymous false
 listener 1883
@@ -40,9 +40,9 @@ persistence true
 password_file /mosquitto/config/pwfile
 persistence_file mosquitto.db
 ````
-Observação: Caso prefira, é possível gerar um containar sem auticação. Apenas excluindo a linha do parâmetro password_file e definindo o parâmetro:
+Observação: Caso prefira, é possível gerar um containar sem autenticação. Apenas excluindo a linha do parâmetro password_file e definindo o parâmetro:
 ```bash 
-allow_anonymous false
+allow_anonymous true
 ````
 Crie um arquivo para os dados de autenticação dos usuários.
 
